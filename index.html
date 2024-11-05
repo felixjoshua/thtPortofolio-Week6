@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Felix Joshua Paulus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <nav class="bg-blue-800 w-full fixed top-0 left-0 z-50 shadow-md">
+        <ul class="flex justify-center space-x-6 py-4">
+            <li><a href="#home" class="text-white hover:bg-blue-700 px-4 py-2 rounded">Home</a></li>
+            <li><a href="#pendidikan" class="text-white hover:bg-blue-700 px-4 py-2 rounded">Pendidikan</a></li>
+            <li><a href="#skills" class="text-white hover:bg-blue-700 px-4 py-2 rounded">Skill</a></li>
+            <li><a href="#about" class="text-white hover:bg-blue-700 px-4 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-blue-700 px-4 py-2 rounded">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="max-w-screen-lg mx-auto mt-24 p-4 space-y-8">
+        
+        <header class="flex flex-col md:flex-row items-center gap-6 bg-white shadow-md rounded-lg p-6">
+            <div class="flex-shrink-0 w-40 h-40 bg-gray-200 rounded-full overflow-hidden">
+                <img src="profil.jpg" alt="Foto Profil Felix Joshua Paulus" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left space-y-4">
+                <h1 class="text-3xl font-bold">Felix Joshua Paulus</h1>
+                <p class="text-gray-600">Mahasiswa Ilmu Komputer, Universitas Pertamina</p>
+                <p class="text-gray-500">Semester 5</p>
+            </div>
+        </header>
+
+        <section id="pendidikan" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Pendidikan</h2>
+            <table class="w-full border-collapse border border-gray-300 text-gray-700">
+                <tbody>
+                    <tr>
+                        <td class="px-4 py-2 border font-semibold">NIM</td>
+                        <td class="px-4 py-2 border">105222032</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border font-semibold">Universitas</td>
+                        <td class="px-4 py-2 border">Universitas Pertamina</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border font-semibold">Status</td>
+                        <td class="px-4 py-2 border">Mahasiswa Aktif</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="skills" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Skill</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="p-4 bg-gray-100 rounded-lg w-40 text-center">Python</div>
+                <div class="p-4 bg-gray-100 rounded-lg w-40 text-center">JavaScript</div>
+                <div class="p-4 bg-gray-100 rounded-lg w-40 text-center">HTML</div>
+                <div class="p-4 bg-gray-100 rounded-lg w-40 text-center">C++</div>
+                <div class="p-4 bg-gray-100 rounded-lg w-40 text-center">Rust</div>
+            </div>
+        </section>
+
+        <section id="about" class="grid md:grid-cols-2 gap-6 bg-white shadow-md rounded-lg p-6">
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-center text-blue-800">About</h2>
+                <p class="text-gray-700 text-justify">
+                    Saya adalah mahasiswa semester 5 di Universitas Pertamina, jurusan Ilmu Komputer. Saya beraspirasi untuk berkarier di dunia Web3, dengan fokus khusus pada blockchain dan cryptocurrency. Minat saya pada teknologi blockchain berasal dari keyakinan bahwa teknologi ini memiliki potensi besar untuk menciptakan sistem yang lebih transparan, terdesentralisasi, dan aman di berbagai sektor. Selain blockchain, saya juga tertarik pada inovasi-inovasi dalam ruang cryptocurrency dan aplikasi Web3 lainnya, serta bagaimana perkembangan ini dapat mengubah cara kita berinteraksi dengan data dan melakukan transaksi secara digital. Dengan latar belakang di ilmu komputer, saya bersemangat untuk terus memperdalam keterampilan teknis saya dan mempersiapkan diri untuk berkontribusi di bidang yang dinamis dan berkembang pesat ini.
+                </p>
+            </div>
+            
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-center text-blue-800">Media (Highlight Tim Sepakbola Favorit)</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold">Video</h3>
+                        <video controls class="w-48 mt-2 mx-auto rounded">
+                            <source src="chelseavid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold">Audio</h3>
+                        <audio controls class="w-full mt-2 rounded">
+                            <source src="chelseaaudio.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="contact" class="bg-blue-800 text-white py-8 mt-8">
+        <div class="max-w-screen-lg mx-auto text-center space-y-6">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <form id="contactForm" class="space-y-4">
+                <div class="flex justify-center">
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama" required class="p-2 rounded border w-64 text-black">
+                </div>
+                <div class="flex justify-center">
+                    <input type="email" id="email" name="email" placeholder="Masukkan email" required class="p-2 rounded border w-64 text-black">
+                </div>
+                <div class="flex justify-center">
+                    <input type="text" id="phone" name="phone" placeholder="Masukkan nomor telepon" required class="p-2 rounded border w-64 text-black">
+                </div>
+                <div class="flex justify-center">
+                    <textarea id="message" name="message" placeholder="Masukkan pesan" required class="p-2 rounded border w-64 h-20 text-black"></textarea>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <label for="mahasiswa" class="flex items-center">
+                        <input type="radio" id="mahasiswa" name="status" value="mahasiswa" required class="mr-1">
+                        Mahasiswa
+                    </label>
+                    <label for="lainnya" class="flex items-center">
+                        <input type="radio" id="lainnya" name="status" value="lainnya" required class="mr-1">
+                        Lainnya
+                    </label>
+                </div>
+                <div class="flex justify-center">
+                    <select name="country" id="country" class="p-2 rounded border w-64 text-gray-500">
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="lainnya">Others</option>
+                    </select>
+                </div>
+                <div class="flex justify-center">
+                    <button type="button" id="submitBtn" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-2 px-4 rounded">Kirim</button>
+                </div>
+            </form>
+            <div class="text-center space-y-2">
+                <p>Email: felixjoshua27@gmail.com</p>
+                <p>Telepon: +6289614127320</p>
+            </div>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://github.com/felixjoshua" target="_blank"><img src="github.png" alt="GitHub" class="w-10 h-10"></a>
+                <a href="https://x.com/ZIMMER_LABS" target="_blank"><img src="twitter.png" alt="Twitter" class="w-10 h-10"></a>
+                <a href="https://medium.com/@felix.joshua1678" target="_blank"><img src="medium.png" alt="Medium" class="w-10 h-10"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const phonePattern = /^(\+62|62|0)8[1-9][0-9]{6,10}$/;
+            if (!phone.match(phonePattern)) {
+                alert("nomor telepon tidak valid");
+                return;
+            }
+
+            const whatsappMessage = `Nama: ${name}%0AEmail: ${email}%0ANomor HP: ${phone}%0APesan: ${message}`;
+            const whatsappUrl = `https://wa.me/6289614127320?text=${whatsappMessage}`;
+            window.open(whatsappUrl, "_blank");
+        });
+    </script>
+
+</body>
+</html>
